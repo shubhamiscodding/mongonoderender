@@ -1,15 +1,18 @@
 const express = require('express');
+const cors = require('cors');
+
 const { MongoClient, ObjectId } = require('mongodb'); // Fix: Import ObjectId
 
 const app = express();
 const port = 8000;
-
+// 
 // MongoDB connection details
-const uri = "mongodb+srv://Shubham:NITa%401234@cluster0.z5xy2.mongodb.net/"; 
+const uri = "https://mongonoderender-1.onrender.com"; 
 const dbName = "codinggita";
 
 // Middleware
 app.use(express.json());
+app.use(cors());
 
 let db, students;
 
