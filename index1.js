@@ -7,7 +7,7 @@ const app = express();
 const port = 8000;
 // 
 // MongoDB connection details
-const uri = "https://mongonoderender-1.onrender.com"; 
+const uri = "mongodb+srv://Shubham:NITa%401234@cluster0.z5xy2.mongodb.net/"; 
 const dbName = "codinggita";
 
 // Middleware
